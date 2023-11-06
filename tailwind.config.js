@@ -12,7 +12,7 @@ export default {
         lightGray: '#F1F1F1',
         veryLightGray: '#FAFAFA',
         primaryLight: '#fbaf85',
-        
+        customGray: '#CFCFCF'
       }
     },
   },

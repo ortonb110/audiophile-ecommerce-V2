@@ -1,6 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap');
+
 /*
 ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
-*//*
+*/
+
+/*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
@@ -309,6 +314,7 @@ menu {
 /*
 Reset default styling for dialogs.
 */
+
 dialog {
   padding: 0;
 }
@@ -349,6 +355,7 @@ button,
 /*
 Make sure disabled buttons don't get the pointer cursor.
 */
+
 :disabled {
   cursor: default;
 }
@@ -382,18 +389,73 @@ video {
 }
 
 /* Make elements with the HTML hidden attribute stay hidden by default */
+
 [hidden] {
   display: none;
 }
-  html {
+
+html {
     font-size: 62.5%;
-  }
-  body {
-    height: 150vh;
-    font-size: 3rem;
+    font-family: 'Manrope', sans-serif;
   }
 
-*, ::before, ::after {
+body {
+    height: 150vh;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+
+  }
+
+body h1 {
+        font-size: 5.6rem;
+        text-transform: uppercase;
+        line-height: 5.8rem;
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+
+body h2 {
+         font-size: 4rem;
+         text-transform: uppercase;
+         line-height: 4.4rem;
+         letter-spacing: 1.5px;
+         font-weight: 700;
+    }
+
+body h3 {
+        font-size: 3.2rem;
+         text-transform: uppercase;
+         line-height: 3.6rem;
+         letter-spacing: 1.15px;
+         font-weight: 700;
+    }
+
+body h4 {
+        font-size: 2.8rem;
+         text-transform: uppercase;
+         line-height: 3.8rem;
+         letter-spacing: 2px;
+         font-weight: 700;
+    }
+
+body h5 {
+        font-size: 2.4rem;
+         text-transform: uppercase;
+         line-height: 3.3rem;
+         letter-spacing: 1.7px;
+         font-weight: 700;
+    }
+
+body h6 {
+        font-size: 1.8rem;
+         text-transform: uppercase;
+         line-height: 1.9rem;
+         letter-spacing: 1.3px;
+         font-weight: 700;
+    }
+
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -443,7 +505,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -491,4 +553,100 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+}
+
+.btn {
+     font-size: 1.3rem;
+     font-weight: 700;
+     letter-spacing: 1px;
+     padding: 1.5rem 3.1rem ;
+     text-transform: uppercase;
+     border: 0;
+     transition: all ease-in-out 0.3s;
+  }
+
+.styled-btn{
+  display: flex;
+  align-items: center;
+  gap: 1.33rem;
+}
+
+.styled-btn:hover{
+  --tw-text-opacity: 1;
+  color: rgb(216 125 74 / var(--tw-text-opacity));
+}
+
+.flex{
+  display: flex;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.gap-\[9px\]{
+  gap: 9px;
+}
+
+.rounded-\[8px\]{
+  border-radius: 8px;
+}
+
+.border-\[1px\]{
+  border-width: 1px;
+}
+
+.border-customGray{
+  --tw-border-opacity: 1;
+  border-color: rgb(207 207 207 / var(--tw-border-opacity));
+}
+
+.px-\[2\.4rem\]{
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+}
+
+.py-\[1\.8rem\]{
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+}
+
+.text-\[1\.2rem\]{
+  font-size: 1.2rem;
+}
+
+.text-\[1\.4rem\]{
+  font-size: 1.4rem;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.tracking-\[-0\.21px\]{
+  letter-spacing: -0.21px;
+}
+
+.caret-primary{
+  caret-color: #D87D4A;
+}
+
+.outline-none{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.placeholder\:text-customGray::-moz-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(207 207 207 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-customGray::placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(207 207 207 / var(--tw-text-opacity));
+}
+
+.focus\:border-primary:focus{
+  --tw-border-opacity: 1;
+  border-color: rgb(216 125 74 / var(--tw-border-opacity));
 }
