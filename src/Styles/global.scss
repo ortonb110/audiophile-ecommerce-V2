@@ -118,5 +118,14 @@
   .styled-btn {
     @apply flex items-center gap-[1.33rem] hover:text-primary
   }
+  .desktop {
+    @apply lg:px-[11.6%]
+  }
+  .mobile {
+    @apply px-[2.4rem]
+  }
+  .tablet {
+    @apply md:px-[3.9rem]
+  }
 
 }

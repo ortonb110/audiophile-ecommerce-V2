@@ -623,6 +623,10 @@ body h6 {
   font-weight: 700;
 }
 
+.capitalize{
+  text-transform: capitalize;
+}
+
 .tracking-\[-0\.21px\]{
   letter-spacing: -0.21px;
 }
@@ -649,4 +653,20 @@ body h6 {
 .focus\:border-primary:focus{
   --tw-border-opacity: 1;
   border-color: rgb(216 125 74 / var(--tw-border-opacity));
+}
+
+@media (min-width: 768px){
+
+  .md\:px-\[3\.9rem\]{
+    padding-left: 3.9rem;
+    padding-right: 3.9rem;
+  }
+}
+
+@media (min-width: 1024px){
+
+  .lg\:px-\[11\.6\%\]{
+    padding-left: 11.6%;
+    padding-right: 11.6%;
+  }
 }
