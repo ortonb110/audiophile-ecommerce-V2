@@ -118,7 +118,7 @@ h6 {
   }
 
   .styled-btn {
-    @apply flex items-center gap-[1.33rem] hover:text-primary
+    @apply flex items-center gap-[1.33rem] text-gray hover:text-primary
   }
   .desktop {
     @apply lg:px-[11.6%]
