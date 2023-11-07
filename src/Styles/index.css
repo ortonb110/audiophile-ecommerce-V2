@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto}.lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}.lenis.lenis-stopped{overflow:hidden}.lenis.lenis-scrolling iframe{pointer-events:none}
+  html {
+    font-size: 62.5%;
+    font-family: 'Manrope', sans-serif;
+    
+  }
+
+  body {
+    
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    
+  }
+
+  h1 {
+    font-size: 5.6rem;
+    text-transform: uppercase;
+    line-height: 5.8rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+h2 {
+     font-size: 4rem;
+     text-transform: uppercase;
+     line-height: 4.4rem;
+     letter-spacing: 1.5px;
+     font-weight: 700;
+}
+
+h3 {
+    font-size: 3.2rem;
+     text-transform: uppercase;
+     line-height: 3.6rem;
+     letter-spacing: 1.15px;
+     font-weight: 700;
+}
+h4 {
+    font-size: 2.8rem;
+     text-transform: uppercase;
+     line-height: 3.8rem;
+     letter-spacing: 2px;
+     font-weight: 700;
+}
+h5 {
+    font-size: 2.4rem;
+     text-transform: uppercase;
+     line-height: 3.3rem;
+     letter-spacing: 1.7px;
+     font-weight: 700;
+}
+h6 {
+    font-size: 1.8rem;
+     text-transform: uppercase;
+     line-height: 1.9rem;
+     letter-spacing: 1.3px;
+     font-weight: 700;
+}
+
+.overline {
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  line-height: 1.9rem;
+  letter-spacing: 10px;
+  color: #D87D4A;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  letter-spacing: 1px;
+  color: #D87D4A;
+}
+  
+}
+
+@layer components {
+  .btn {
+     font-size: 1.3rem;
+     font-weight: 700;
+     letter-spacing: 1px;
+     padding: 1.5rem 3.1rem ;
+     text-transform: uppercase;
+     border: 0;
+     transition: all ease-in-out 0.3s;
+  }
+  .btn-primary {
+    background-color: #D87D4A;
+    color: #fff;
+  }
+  .btn-white {
+    border: 1.5px solid #000;
+    background-color: transparent;
+    color: #000;
+  }
+  
+  .btn-primary:hover {
+    background-color: #FBAF85;
+    
+  }
+
+  .btn-white:hover {
+    
+    background-color: #000;
+    color: #fff;
+  }
+
+  .styled-btn {
+    @apply flex items-center gap-[1.33rem] hover:text-primary
+  }
+  .desktop {
+    @apply lg:px-[11.6%]
+  }
+  .mobile {
+    @apply px-[2.4rem]
+  }
+  .tablet {
+    @apply md:px-[3.9rem]
+  }
+
+  .text-hover {
+    @apply hover:text-primary transition-all ease-in-out duration-100
+  }
+
+}
