@@ -67,7 +67,7 @@ const NavigationBar = () => {
           </button>
         </div>
       </section>
-      {openMenu && <MenuBar />}
+      {openMenu && <MenuBar toggleMenu={toggleMenu}/>}
     </nav>
   );
 };
