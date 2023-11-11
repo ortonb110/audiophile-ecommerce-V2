@@ -83,6 +83,19 @@ h6 {
   letter-spacing: 1px;
   color: #D87D4A;
 }
+
+.background-image {
+  background-image: url('https://res.cloudinary.com/dq1yqnbi0/image/upload/v1699711273/home/desktop/wontykmfvdu4lfxaliyg.jpg');
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: -1;
+}
   
 }
 
@@ -133,5 +146,7 @@ h6 {
   .text-hover {
     @apply hover:text-primary transition-all ease-in-out duration-100
   }
+
+
 
 }
